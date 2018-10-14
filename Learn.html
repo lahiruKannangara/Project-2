@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Learn
+    </title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+    <link href="dist/css/alt/AdminLTE-bootstrap-social.css" rel="stylesheet" />
+    <link href="dist/css/alt/AdminLTE-without-plugins.css" rel="stylesheet" />
+
+    <link href="dist/css/skins/_all-skins.css" rel="stylesheet" />
+
+    <link href="dist/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <script>
+        function playPause(btn, vid) {
+            var vid = document.getElementById(vid);
+            if (vid.paused) {
+                vid.play();
+                btn.innerHTML = "Pause";
+            } else {
+                vid.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+    </script>
+
+    <style>
+
+        div#video_player_box {
+            width: 100px;
+            background: #000;
+            margin: 0px auto
+        }
+
+        div#video_controls_bar {
+            background: #333;
+            padding: 10px;
+        }
+
+        /*body {
+            background-image: url("dist/imgs/ketodiet.jpg");
+            background-image: initial;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }*/
+
+        }
+
+        .content {
+            max-width: 500px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body class="skin-customred layout-top-nav">
+
+    <div class="wrapper" style="background:url(dist/imgs/ketodiet.jpg)">
+        <header class="main-header">
+            <nav class="navbar navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <h1 class="box-title" style="color:#fb0606; font-family:Tahoma; font-size:65px"><span class="fa fa-heartbeat" aria-hidden="true"></span> Healthy Life</h1>
+                    </div>
+                </div>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-static-top"></ul>
+                </div>
+            </nav>
+        </header>
+
+        <div>
+            <nav class="navbar-static-top" style="background-color:aliceblue">
+                <div class="container" style="align-items:center">
+                    <!--<div class="navbar-header">-->
+
+                    <ul class="nav nav-pills nav-justified" style="align-content:center">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-tachometer" style="font-size:50PX"></i>Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-commenting" style="font-size:50PX"></i>About us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="MyTrackers.html">
+                                <i class="fa fa-bar-chart" style="font-size:50PX"></i> My Trackers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-leanpub" style="font-size:50PX"></i>Learn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ChatWithUs.html">
+                                <i class="fa fa-comments active" style="font-size:50PX"></i>Chat with Us
+                            </a>
+                        </li>
+                    </ul>
+                    <!--</div>-->
+                </div>
+            </nav>
+        </div>
+        <div class="content-wrapper" style="background:url(dist/imgs/ketodiet.jpg); background-image:initial">
+            <h1 style="font-size:500%;"><b><i><p align="center" style="color:#ffffff;">Learn</p></i></b></h1>
+
+            <div style="float:center;width: 70.11%;  padding: 15px;">
+
+                <h1><p style="color:#ffffff;"><b><i class="fa fa-heart"></i> YOUR FAVORITE FOODS made healthier!</b></p></h1>
+
+                <h2><p style="color:#ffffff;"><b>Our team of nutrition experts and dietitians designed Nutrisystem plans to include:</b></p></h2>
+                <h3><p style="color:#ffffff;"><b>The right mix of nutrients to fuel your body</b></p></h3>
+                <h3><p style="color:#ffffff;"><b>Plenty of healthy,lean protein</b></p></h3>
+                <h3><p style="color:#ffffff;"><b>Hight fiber to help kep you feeling fuller</b></p></h3>
+                <h3><p style="color:#ffffff;"><b>Low-glycemic carbs to stabilize blood sugar</b></p></h3>
+                <h3><p style="color:#ffffff;"><b>No artificial sweeteners or flavors</b></p></h3>
+            </div>
+
+            <div style="float:left;width: 100.00%;padding: 15px;">
+
+                <h1><p style="color:#ffffff;"><b><i class="fa fa-heart"></i> SAFE & HEALTHY weight loss</b></p></h1>
+
+                <h2><p style="color:#ffffff;"><b>Research suggests that eating smaller,balanced meals throughout the day promotes greater weight loss and maintenance</b></p></h2>
+                <h3><p style="color:#ffffff;"><b>Eat every 2-3 hours-that's six times a day</b></p></h3>
+                <h3><p style="color:#ffffff;"><b>Enjoy a variety of breakfasts,lunches,dinners and snacks</b></p></h3>
+                <h3><p style="color:#ffffff;"><b>Mix in fresh grocery food to make healthy flex meals for balance and variety</b></p></h3>
+            </div>
+
+            <video id="my_video" controls="controls" width="100%" height="70%" autoplay>
+                <source src="dist/vid/How to live healthy life.mp4">
+            </video>
+            <div id="video_controls_bar">
+                <button id="playpausebtn" onclick="playPause(this ,'my_video')" class="btn btn-danger">Pause</button>
+            </div>
+        </div>
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                <span class="fa fa-facebook-official"></span>
+                <span class="fa fa-linkedin-square"></span>
+                <span class="fa fa-gratipay"></span>
+            </div>
+            <strong>Copyright &copy;Healthy Life Inc. 2018.</strong> All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
